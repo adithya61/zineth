@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const client = axios.create({
-  baseURL:
-    "https://sheets.googleapis.com/v4/spreadsheets/1SvJjbYuUFRNjvFT7I6osprbN49gMQNyoGXJyt2ECcFA/values/Sheet1?key=AIzaSyA_Kp4h7AQ_GQdVTCNXd8QPMvu7rKy7nVk",
+  baseURL: `https://sheets.googleapis.com/v4/spreadsheets/1SvJjbYuUFRNjvFT7I6osprbN49gMQNyoGXJyt2ECcFA/values/Sheet1?key=${
+    import.meta.env.VITE_API_KEY
+  }`,
 });
 
 class APIClient {
