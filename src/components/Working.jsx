@@ -28,11 +28,11 @@ const iconMap = {
 
 const iconColors = [
   "text-black",
-  "text-green-600",
-  "text-purple-600",
-  "text-red-600",
-  "text-blue-600",
-  "text-yellow-500",
+  "text-black",
+  "text-black",
+  "text-black",
+  "text-black",
+  "text-black",
 ];
 
 const images = [Initial, Assessment, Planning, Solution, Testing, Support];
