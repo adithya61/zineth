@@ -2,7 +2,9 @@ const Contact = () => {
   return (
     <section className="py-12 bg-white h-[90vh]">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-4xl font-semibold text-center mb-16">Contact Us</h2>
+        <h2 className="text-4xl font-semibold text-center mb-16 open-sans">
+          Contact Us
+        </h2>
         <form className="space-y-6">
           {/* Name Field */}
           <div>

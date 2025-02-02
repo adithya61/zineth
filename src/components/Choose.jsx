@@ -41,7 +41,7 @@ const Choose = () => {
   return (
     <section className="py-12 bg-stone-100">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-semibold text-center mb-12">
+        <h2 className="text-4xl font-semibold text-center mb-12 open-sans">
           Why Choose Us?
         </h2>
 

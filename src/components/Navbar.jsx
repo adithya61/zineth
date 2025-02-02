@@ -12,26 +12,29 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-4 bg-[#F9F6E6] px-5 md:px-10 font-medium relative">
+    <nav className="flex justify-between items-center p-5 bg-[#212121] px-5 md:px-16 font-medium relative">
       {/* Logo */}
-      <div className="text-5xl font-light bg-transparent text-gray-500">
-        <b className="text-black font-medium">Z</b>enith
+      <div className="text-5xl font-light bg-transparent text-[#FBF5E5]">
+        <b className="text-white font-medium">Z</b>enith
       </div>
 
       {/* Hamburger Menu */}
-      <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className="md:hidden transition-all duration-500 ease-in-out text-white cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
       </div>
 
       <ul
-        className={`md:flex md:flex-row space-x-6 hidden md:block absolute md:static top-14 left-0 w-full
+        className={`md:flex md:flex-row space-x-6 hidden absolute md:static top-14 left-0 w-full
              bg-transparent md:w-auto md:space-x-6 p-4 md:p-0 transition-transform md:transition-none
               duration-300 ease-in-out transform origin-top `}
       >
         {navLinks.map((item, index) => (
           <li
             key={index}
-            className="text-black hover:text-gray-700 cursor-pointer relative md:inline-block
+            className="text-white hover:text-white-300 cursor-pointer relative md:inline-block
              block py-2 md:py-0"
           >
             <span
@@ -48,11 +51,11 @@ const Navbar = () => {
       {/* Navigation Links */}
       {isOpen && (
         <ul
-          className={` flex flex-col items-center space-x-6 md:hidden absolute md:static top-14 left-0 w-full
+          className={`flex flex-col items-center space-x-6 md:hidden absolute md:static top-14 left-0 w-full
              bg-white md:w-auto md:space-x-6 p-4 md:p-0 transition-transform md:transition-none
               duration-300 ease-in-out transform origin-top ${
                 isOpen
-                  ? "scale-y-100 opacity-100"
+                  ? "h-screen opacity-100"
                   : "scale-y-0 opacity-0 hidden md:flex"
               } `}
         >
@@ -63,7 +66,7 @@ const Navbar = () => {
              block py-2 md:py-0"
             >
               <span
-                className="relative after:content-[''] after:absolute after:w-full after:h-[2px] 
+                className="text-black transform  relative after:content-[''] after:absolute after:w-full after:h-[2px] 
             after:bg-black after:left-0 after:bottom-0 after:scale-x-0 after:transition-transform 
             after:duration-300 hover:after:scale-x-100"
               >

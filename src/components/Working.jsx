@@ -54,7 +54,7 @@ const Working = () => {
 
   return (
     <section className="py-12 text-center bg-[#F9F6E6]">
-      <h2 className="text-4xl font-semibold mb-24">How It Works?</h2>
+      <h2 className="text-4xl font-semibold mb-24 open-sans">How It Works?</h2>
       <div className="max-w-6xl mx-auto px-4">
         {formattedSteps.length > 0 ? (
           formattedSteps.map((step, index) => (

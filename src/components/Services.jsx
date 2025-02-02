@@ -46,14 +46,14 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-100 text-center h-fit ">
-      <h2 className="text-4xl font-semibold mb-24">Our Services</h2>
+    <section className=" px-16 py-12 bg-white text-left h-fit ">
+      <h2 className="text-4xl font-semibold mb-16 open-sans px-4">Our Services</h2>
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {formattedServices.length > 0 ? (
           formattedServices.map((service, index) => (
             <div
               key={index}
-              className="cursor-pointer bg-white p-8 mb-10 rounded-lg shadow-md flex flex-col items-center"
+              className="cursor-pointer bg-white p-8 mb-10 rounded-lg flex flex-col items-center"
             >
               <div className={`${iconColors[index]} mb-4`}>
                 {iconMap[service.title] || <FaLaptopCode size={40} />}
