@@ -75,7 +75,7 @@ const Choose = () => {
             <img
               src={Illustration}
               alt="Why Choose Us Illustration"
-              className="w-full h-auto rounded-lg bg-white shadow-md"
+              className="w-full h-auto rounded-lg hidden md:block bg-white shadow-md"
             />
           </div>
         </div>
