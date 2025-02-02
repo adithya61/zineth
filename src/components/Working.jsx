@@ -62,7 +62,7 @@ const Working = () => {
   return (
     <section className="py-12 text-center bg-[#F9F6E6]">
       <h2 className="text-4xl font-semibold mb-24 open-sans">How It Works?</h2>
-      <div className="max-w-6xl mx-auto px-4">
+      <div className=" px-4 md:px-16">
         {formattedSteps.length > 0 ? (
           formattedSteps.map((step, index) => (
             <div
@@ -72,6 +72,7 @@ const Working = () => {
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               } gap-8 mb-22`}
             >
+                {/* image */}
               <div className="flex-1 flex sm:justify-center lg:justify-start">
                 <img
                   src={images[index]}
@@ -80,16 +81,19 @@ const Working = () => {
                    h-full md:p-3 border-stone-200 shadow-md"
                 />
               </div>
+              {/* image end */}
 
+                {/* second row */}
               <div className="flex-1 text-left mt-10">
                 <div className={`${iconColors[index]} mb-4`}>
                   {iconMap[step.title] || <FaLightbulb size={40} />}
                 </div>
                 <h3 className="text-3xl font-medium mb-4">{step.title}</h3>
-                <p className="text-black leading-8 font-sans tracking-wide text-md">
+                <p className="text-gray-700 leading-5 open-sans pr-28 tracking-wide text-md">
                   {step.description}
                 </p>
               </div>
+              {/* second row end */}
             </div>
           ))
         ) : (
