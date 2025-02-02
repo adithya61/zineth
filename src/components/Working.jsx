@@ -6,6 +6,9 @@ import {
   FaTools,
   FaHandsHelping,
 } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import useData from "../hooks/useData.js";
 import Initial from "../assets/initial_call.svg";
 import Assessment from "../assets/tech_assessment.svg";
@@ -35,6 +38,10 @@ const iconColors = [
 const images = [Initial, Assessment, Planning, Solution, Testing, Support];
 
 const Working = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const workingData = useData();
 
   const workingEntry = workingData.find((item) => item[0] === "How it works?");
@@ -60,6 +67,7 @@ const Working = () => {
           formattedSteps.map((step, index) => (
             <div
               key={index}
+              data-aos="fade-down"
               className={`flex flex-col ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               } gap-8 mb-22`}

@@ -8,6 +8,9 @@ import {
 } from "react-icons/fa";
 import useData from "../hooks/useData.js";
 import Illustration from "../assets/why.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const iconMap = {
   "Experienced Team": <FaUserShield size={40} />,
@@ -21,6 +24,10 @@ const iconMap = {
 const iconColors = ["text-yellow-500", "text-red-500", "text-sky-500"];
 
 const Choose = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const chooseData = useData();
 
   const chooseEntry = chooseData.find((item) => item[0] === "Why choose us?");
@@ -44,13 +51,13 @@ const Choose = () => {
         <h2 className="text-4xl font-semibold text-center mb-12 open-sans">
           Why Choose Us?
         </h2>
-
         <div className="flex flex-col md:flex-row gap-8 mb-16">
           <div className="flex-1 grid grid-cols-1 gap-8">
             {formattedReasons.length > 0 ? (
               formattedReasons.slice(0, 3).map((reason, index) => (
                 <div
                   key={index}
+                  data-aos="fade-right"
                   className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4"
                 >
                   <div className={`${iconColors[index]} flex-shrink-0`}>
@@ -71,7 +78,10 @@ const Choose = () => {
             )}
           </div>
 
-          <div className="flex-1 flex items-center justify-center">
+          <div
+            data-aos="fade-left"
+            className="flex-1 flex items-center justify-center"
+          >
             <img
               src={Illustration}
               alt="Why Choose Us Illustration"

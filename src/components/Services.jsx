@@ -7,6 +7,9 @@ import {
   FaHeadset,
 } from "react-icons/fa";
 import useData from "../hooks/useData.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const iconMap = {
   "IT Strategy & Consulting": <FaLaptopCode size={40} />,
@@ -19,6 +22,10 @@ const iconMap = {
 };
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const servicesData = useData();
 
   const servicesEntry = servicesData.find((item) => item[0] === "services");
@@ -47,12 +54,15 @@ const Services = () => {
 
   return (
     <section className=" px-16 py-12 bg-white text-left h-fit ">
-      <h2 className="text-4xl font-semibold mb-16 open-sans px-4">Our Services</h2>
+      <h2 className="text-4xl font-semibold mb-16 open-sans px-4">
+        Our Services
+      </h2>
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
         {formattedServices.length > 0 ? (
           formattedServices.map((service, index) => (
             <div
               key={index}
+              data-aos="fade-up"
               className="cursor-pointer bg-white p-8 mb-10 rounded-lg flex flex-col items-center"
             >
               <div className={`${iconColors[index]} mb-4`}>
