@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-4 bg-[#F9F6E6] px-5 md:px-10 font-medium relative">
       {/* Logo */}
-      <div className="text-5xl font-medium bg-transparent text-black">
-        <b>Z</b>enith
+      <div className="text-5xl font-light bg-transparent text-gray-500">
+        <b className="text-black font-medium">Z</b>enith
       </div>
 
       {/* Hamburger Menu */}

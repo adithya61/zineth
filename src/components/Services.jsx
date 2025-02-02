@@ -21,22 +21,29 @@ const iconMap = {
 const Services = () => {
   const servicesData = useData();
 
-
   const servicesEntry = servicesData.find((item) => item[0] === "services");
   const servicesString = servicesEntry ? servicesEntry[1] : "";
 
-
   const formattedServices = servicesString
-    .split("\n") 
+    .split("\n")
     .map((item) => {
-      const [title, description] = item.split("–"); 
-      if (!title || !description) return null; 
+      const [title, description] = item.split("–");
+      if (!title || !description) return null;
       return {
         title: title.trim(),
         description: description.trim(),
       };
     })
-    .filter(Boolean); 
+    .filter(Boolean);
+
+  const iconColors = [
+    "text-black",
+    "text-green-600",
+    "text-purple-600",
+    "text-red-600",
+    "text-blue-600",
+    "text-yellow-500",
+  ];
 
   return (
     <section className="py-12 bg-gray-100 text-center h-fit ">
@@ -48,7 +55,7 @@ const Services = () => {
               key={index}
               className="cursor-pointer bg-white p-8 mb-10 rounded-lg shadow-md flex flex-col items-center"
             >
-              <div className="text-blue-600 mb-4">
+              <div className={`${iconColors[index]} mb-4`}>
                 {iconMap[service.title] || <FaLaptopCode size={40} />}
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

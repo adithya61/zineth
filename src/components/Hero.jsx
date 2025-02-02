@@ -2,11 +2,11 @@ import hero from "../assets/hero.webp";
 const Hero = () => {
   return (
     <section
-      className="hero-container px-5 md:px-10  flex flex-row justify-between items-center h-[calc(100vh-64px)]
-       bg-cover bg-center text-center bg-[#F9F6E6]"
+      className="hero-container px-5 md:px-10  flex flex-row justify-between items-center h-[calc(100vh - 64px)]
+       bg-cover bg-center text-center bg-[#F9F6E6] pb-10"
     >
       {/* hero text and head */}
-      <div className=" w-full lg:w-[50%] text-left flex flex-col justify-center">
+      <div className=" w-full lg:w-[50%] text-left flex flex-col gap-5 justify-center">
         <h1 className="text-6xl tracking-wide leading-16 font-medium pr-20 text-black mb-4">
           Find and close your next deal
         </h1>
