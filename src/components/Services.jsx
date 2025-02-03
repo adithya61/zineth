@@ -53,8 +53,8 @@ const Services = () => {
   ];
 
   return (
-    <section className=" px-16 py-12 bg-white text-left h-fit ">
-      <h2 className="text-4xl font-semibold mb-16 open-sans px-4">
+    <section className=" px-16 py-12 bg-[#EEEDEB] text-center  h-fit ">
+      <h2 className="text-4xl font-semibold mb-16 open-sans underline underline-offset-[8px] px-4">
         Our Services
       </h2>
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
@@ -63,7 +63,7 @@ const Services = () => {
             <div
               key={index}
               data-aos="fade-up"
-              className="cursor-pointer bg-white p-8 mb-10 rounded-lg flex flex-col items-center"
+              className="cursor-pointer shadow-md drop-shadow-md shadow-[#fff] bg-white p-8 mb-10 rounded-lg flex flex-col items-center"
             >
               <div className={`${iconColors[index]} mb-4`}>
                 {iconMap[service.title] || <FaLaptopCode size={40} />}

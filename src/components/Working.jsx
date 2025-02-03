@@ -60,8 +60,10 @@ const Working = () => {
     .filter(Boolean);
 
   return (
-    <section className="py-12 text-center bg-[#F9F6E6]">
-      <h2 className="text-4xl font-semibold mb-24 open-sans">How It Works?</h2>
+    <section className="py-12 text-center bg-[#fda]">
+      <h2 className="text-4xl font-semibold mb-16 open-sans underline underline-offset-10">
+        How It Works?
+      </h2>
       <div className=" px-4 md:px-16">
         {formattedSteps.length > 0 ? (
           formattedSteps.map((step, index) => (
@@ -70,26 +72,28 @@ const Working = () => {
               data-aos="fade-down"
               className={`flex flex-col ${
                 index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              } gap-8 mb-22`}
+              } gap-[4rem] mb-12`}
             >
-                {/* image */}
-              <div className="flex-1 flex sm:justify-center lg:justify-start">
+              {/* image */}
+              <div className="  bg-transparent h-[26rem] w-[40rem] p-10">
                 <img
                   src={images[index]}
                   alt={step.title}
-                  className="rounded-lg border-[1px] bg-white object-cover lg:w-[80%] w-[80%]
-                   h-full md:p-3 border-stone-200 shadow-md"
+                  className="rounded-lg border-[1px] p-3 bg-white object-contain
+                   h-full w-full border-gray-500 shadow-2xl"
                 />
               </div>
               {/* image end */}
 
-                {/* second row */}
-              <div className="flex-1 text-left mt-10">
-                <div className={`${iconColors[index]} mb-4`}>
+              {/* second row */}
+              <div className=" text-left mt-10 w-[50%]">
+                <div className={`${iconColors[index]} mb-5`}>
                   {iconMap[step.title] || <FaLightbulb size={40} />}
                 </div>
-                <h3 className="text-3xl font-medium mb-4">{step.title}</h3>
-                <p className="text-gray-700 leading-5 open-sans pr-28 tracking-wide text-md">
+                <h3 className="text-3xl md:text-4xl font-medium roboto-mono my-6">
+                  {step.title}
+                </h3>
+                <p className="text-gray-700 opacity-85 inter leading-[1.75rem] tracking-[2px] text-md pr-[3rem]">
                   {step.description}
                 </p>
               </div>

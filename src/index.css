@@ -14,6 +14,32 @@
   font-variation-settings: "wdth" 100;
 }
 
+
+.open-sans-100 {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+
+.open-sans-400 {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+.open-sans-300 {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 .inter {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -23,4 +49,8 @@
 
 .hero-container {
   background-image: url("./assets/hero-background.jpg");
+}
+
+.general-border {
+    border: 1px solid black;
 }
