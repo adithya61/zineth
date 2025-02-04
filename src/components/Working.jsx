@@ -61,7 +61,7 @@ const Working = () => {
     .filter(Boolean);
 
   return (
-    <section className="py-12 text-center bg-[#fff]">
+    <section className="py-12 text-center bg-[#EFEFEF]">
       <h2 className="text-4xl font-semibold mb-16 open-sans underline underline-offset-10">
         How It Works?
       </h2>
@@ -80,7 +80,8 @@ const Working = () => {
                 <img
                   src={images[index]}
                   alt={step.title}
-                  className="rounded-lg  bg-white object-fit aspect-ratio
+                  className="rounded-3xl  bg-white object-fit
+                  border-[0.5px] 
                    h-full w-full "
                 />
               </div>
@@ -94,16 +95,16 @@ const Working = () => {
                     {iconMap[step.title] || <FaLightbulb size={40} />}
                   </div>
                   {/* title */}
-                  <h3 className=" text-gary text-3xl md:text-4xl font-medium roboto-mono-400">
+                  <h3 className=" text-gary text-3xl md:text-4xl font-medium nunito-400">
                     {step.title}
                   </h3>
                 </div>
                 {/* description */}
-                <p className="text-gray-800 opacity-85 inter leading-[1.75rem] tracking-[4px] text-md pt-5 pr-0 lg:pr-[10%]">
+                <p className="text-gray-800 opacity-85 inter leading-[1.25rem] tracking-[2.5px] text-md pt-5 pr-0 lg:pr-[10%]">
                   {step.description}
                 </p>
                 {/* Learn more button */}
-                <button className=" w-fit group mt-10 flex  items-center gap-3 text-white roboto bg-[#262626] rounded-lg py-3.5 hover:bg-gray-900 cursor-pointer px-[25%] lg:px-7">
+                <button className=" w-fit group mt-6 flex  items-center gap-3 text-white inter bg-[#262626] rounded-lg py-3.5 hover:bg-gray-900 cursor-pointer px-[24%] lg:px-3">
                   Learn More{" "}
                   <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
                     <FaArrowRight />

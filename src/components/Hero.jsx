@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="flex flex-col hero-container">
       <Navbar />
       <section
-        className=" px-5 md:px-16  flex flex-row justify-between items-center h-[calc(100vh-64px)]
+        className=" px-5 md:px-28  flex flex-row justify-between items-center h-[calc(100vh-64px)]
        bg-cover bg-center text-center bg-transparent pb-10"
       >
         {/* hero text and head */}
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
         {/* hero image */}
-        <div className="lg:w-[50%] hidden lg:block h-full mt-36 relative left-20">
+        <div className="lg:w-[50%] hidden lg:block h-full lg:mt-[37%] xl:mt-[30%] relative left-20">
           <img className=" object-cover" src={hero} alt="hero image" />
         </div>
       </section>

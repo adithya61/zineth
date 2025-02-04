@@ -7,22 +7,22 @@
 }
 
 .roboto-mono-300 {
-    font-family: "Roboto Mono", serif;
-    /* font-optical-sizing: auto; */
-    font-weight: 300;
-  }
+  font-family: "Roboto Mono", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
+}
 
-  .roboto-mono-400 {
-    font-family: "Roboto Mono", serif;
-    /* font-optical-sizing: auto; */
-    font-weight: 400;
-  }
+.roboto-mono-400 {
+  font-family: "Roboto Mono", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 400;
+}
 
-  .roboto-mono-500 {
-    font-family: "Roboto Mono", serif;
-    /* font-optical-sizing: auto; */
-    font-weight: 500;
-  }
+.roboto-mono-500 {
+  font-family: "Roboto Mono", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 500;
+}
 
 .open-sans {
   font-family: "Open Sans", serif;
@@ -32,23 +32,21 @@
   font-variation-settings: "wdth" 100;
 }
 
-
 .open-sans-100 {
-    font-family: "Open Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  }
-
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
 .open-sans-400 {
-    font-family: "Open Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-  }
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
 
 .open-sans-300 {
   font-family: "Open Sans", serif;
@@ -66,9 +64,48 @@
 }
 
 .hero-container {
-  background-image: url("./assets/hero-background.jpg");
+  background-image: url("./assets/hero-background.avif");
+  background-size: 100vw 100vh;
 }
 
 .general-border {
-    border: 1px solid black;
+  border: 1px solid black;
+}
+
+.nunito-200 {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.nunito-100 {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Nunito - Light (300) */
+.nunito-300 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Nunito - Regular (400) */
+.nunito-400 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Nunito - Medium (500) */
+.nunito-500 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
