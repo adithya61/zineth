@@ -6,6 +6,24 @@
   font-weight: 600;
 }
 
+.roboto-mono-300 {
+    font-family: "Roboto Mono", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 300;
+  }
+
+  .roboto-mono-400 {
+    font-family: "Roboto Mono", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+  }
+
+  .roboto-mono-500 {
+    font-family: "Roboto Mono", serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 500;
+  }
+
 .open-sans {
   font-family: "Open Sans", serif;
   font-optical-sizing: auto;

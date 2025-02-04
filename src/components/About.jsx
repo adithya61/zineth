@@ -7,7 +7,7 @@ const About = () => {
   const aboutContent = aboutEntry ? aboutEntry[1] : "";
 
   return (
-    <section className="py-12 bg-[#FFCDB2]">
+    <section className="py-12 bg-blue-200">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl mb-16 underline underline-offset-[10px] open-sans-400">
           About Us

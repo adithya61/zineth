@@ -46,7 +46,7 @@ const Choose = () => {
     .filter(Boolean);
 
   return (
-    <section className="py-12 bg-[#EEEDEB]">
+    <section className="py-12 bg-[#fff]">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-semibold text-center mb-12 open-sans">
           Why Choose Us?

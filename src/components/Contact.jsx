@@ -1,13 +1,13 @@
 const Contact = () => {
   return (
-    <section className="py-12 bg-[#EEEDEB] h-[90vh]">
+    <section className="py-12 bg-[#fff] h-[90vh]">
       <div className="max-w-4xl bg-[#F4F8D3] p-16  mx-auto rounded-lg px-16">
         <h2 className="text-4xl font-semibold underline underline-offset-[10px] text-center mb-16 open-sans">
           Contact Us
         </h2>
         <form className="space-y-6">
           {/* Name Field */}
-          <div>
+          <div>i
             <label
               htmlFor="name"
               className="block text-lg  font-medium text-gray-700"

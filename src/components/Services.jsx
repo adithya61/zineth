@@ -53,7 +53,7 @@ const Services = () => {
   ];
 
   return (
-    <section className=" px-16 py-12 bg-[#EEEDEB] text-center  h-fit ">
+    <section className=" px-16 py-12 bg-[#fff] text-center  h-fit ">
       <h2 className="text-4xl font-semibold mb-16 open-sans underline underline-offset-[8px] px-4">
         Our Services
       </h2>

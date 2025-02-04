@@ -12,15 +12,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-5 bg-[#212121] px-5 md:px-16 font-medium relative">
+    <nav className="flex justify-between items-center p-5 bg-transparent px-5 md:px-16 font-medium relative">
       {/* Logo */}
-      <div className="text-5xl font-light bg-transparent text-[#FBF5E5]">
+      <div className="text-3xl md:text-4xl font-light bg-transparent text-[#FBF5E5]">
         <b className="text-white font-medium">Z</b>enith
       </div>
 
       {/* Hamburger Menu */}
       <div
-        className="md:hidden transition-all duration-500 ease-in-out text-white cursor-pointer"
+        className="md:hidden transition-all duration-500 ease-in-out text-[#fff] cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -31,10 +31,11 @@ const Navbar = () => {
              bg-transparent md:w-auto md:space-x-6 p-4 md:p-0 transition-transform md:transition-none
               duration-300 ease-in-out transform origin-top `}
       >
+        {/* Navlinks md to large devices */}
         {navLinks.map((item, index) => (
           <li
             key={index}
-            className="text-white hover:text-white-300 cursor-pointer relative md:inline-block
+            className="text-[#fff] hover:text-white-300 cursor-pointer relative md:inline-block
              block py-2 md:py-0"
           >
             <span
@@ -62,7 +63,7 @@ const Navbar = () => {
           {navLinks.map((item, index) => (
             <li
               key={index}
-              className="text-black hover:text-gray-700 cursor-pointer relative md:inline-block
+              className="text-[#fff] hover:text-gray-700 cursor-pointer relative md:inline-block
              block py-2 md:py-0"
             >
               <span
