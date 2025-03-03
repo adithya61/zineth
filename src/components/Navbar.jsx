@@ -12,10 +12,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-5 bg-transparent px-5 md:px-16 font-medium relative">
+    <nav className="flex justify-between items-center p-5 bg-transparent px-5 md:px-16 relative">
       {/* Logo */}
-      <div className="text-3xl md:text-4xl font-light bg-transparent text-[#FBF5E5]">
-        <b className="text-white font-medium">Z</b>enith
+      <div className="logo text-3xl md:text-5xl font-light bg-transparent text-[#FBF5E5]">
+        <b className="text-orange-400 text-4xl md:text-6xl font-medium font-serif">Z</b>
+        enith
       </div>
 
       {/* Hamburger Menu */}
@@ -27,15 +28,15 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`md:flex md:flex-row space-x-6 hidden absolute md:static top-14 left-0 w-full
-             bg-transparent md:w-auto md:space-x-6 p-4 md:p-0 transition-transform md:transition-none
+        className={` md:flex md:flex-row space-x-6 hidden absolute md:static top-14 left-0 w-full
+             bg-transparent md:w-auto md:space-x-12 p-4 md:p-0 transition-transform md:transition-none
               duration-300 ease-in-out transform origin-top `}
       >
         {/* Navlinks md to large devices */}
         {navLinks.map((item, index) => (
           <li
             key={index}
-            className="text-[#fff] hover:text-white-300 cursor-pointer relative md:inline-block
+            className="nav-links hover:text-white-300 cursor-pointer relative md:inline-block
              block py-2 md:py-0"
           >
             <span

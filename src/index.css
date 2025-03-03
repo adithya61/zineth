@@ -1,4 +1,17 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.container {
+    font-family: cursive;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .roboto-mono {
   font-family: "Roboto Mono", serif;
@@ -64,8 +77,12 @@
 }
 
 .hero-container {
-  background-image: url("./assets/hero-background.avif");
-  background-size: 100vw 100vh;
+  /* background-image: url("./assets/hero-background.avif"); */
+
+  background-image: linear-gradient(to bottom, #000000, #ff0000, #ffff00);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 .general-border {
@@ -108,4 +125,37 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+.logo {
+  font-family: sans-serif;
+}
+
+.nav-links {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: 590;
+  font-size: larger;
+}
+
+.hero-text {
+  line-height: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-desc {
+  font-weight: 350;
+}
+
+.hero-btn--book {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12.5px;
+  font-size: 16px;
+}
+
+.hero-btn--book:hover {
+  background-color: #4aa5ff;
 }
